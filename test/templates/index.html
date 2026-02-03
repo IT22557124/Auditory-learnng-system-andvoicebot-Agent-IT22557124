@@ -1,0 +1,99 @@
+<!doctype html>
+<html>
+<head>
+    <title>Grade 7 Science Chatbot</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif; 
+            max-width: 800px; 
+            margin: 40px auto; 
+            background: #f0f4f8;
+            padding: 20px;
+        }
+        h1 { 
+            text-align: center; 
+            color: #333; 
+            margin-bottom: 10px;
+        }
+
+        /* Test Mode Banner */
+        .test-banner {
+            background: #fff3cd; 
+            border: 1px solid #ffeeba; 
+            padding: 15px; 
+            border-radius: 6px; 
+            margin-bottom: 20px;
+            color: #856404;
+            font-size: 16px;
+            text-align: center;
+        }
+
+        textarea {
+            width: 100%;
+            height: 100px;
+            padding: 10px;
+            font-size: 16px;
+            border-radius: 5px;
+            border: 1px solid #bbb;
+        }
+        button {
+            padding: 10px 20px;
+            background: #0078ff;
+            color: white;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+        button:hover { 
+            background: #005fcc; 
+        }
+        .answer-box {
+            margin-top: 20px;
+            background: white;
+            border-radius: 6px;
+            padding: 15px;
+            border: 1px solid #ccc;
+        }
+        .label {
+            font-weight: bold;
+            margin-bottom: 8px;
+            font-size: 18px;
+        }
+
+        /* Footer */
+        .footer {
+            text-align: center;
+            margin-top: 40px;
+            color: #666;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- 🔧 Test Mode Banner -->
+    <div class="test-banner">
+        ⚠️ <strong>This is a TEST version</strong> — Only for testing the chatbot module.  
+        The design and features are not final.
+    </div>
+
+    <form method="POST">
+        <label for="question">Ask a science question:</label><br><br>
+        <textarea name="question" id="question" placeholder="What is photosynthesis?" required>{{ question or "" }}</textarea><br><br>
+        <button type="submit">Ask</button>
+    </form>
+
+    {% if answer %}
+    <div class="answer-box">
+        <div class="label">Answer:</div>
+        <div>{{ answer }}</div>
+    </div>
+    {% endif %}
+
+    <div class="footer">
+        © 2025 • Test Module — For Internal Use Only
+    </div>
+
+</body>
+</html>
