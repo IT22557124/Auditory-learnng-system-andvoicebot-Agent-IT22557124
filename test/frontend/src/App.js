@@ -1,5 +1,5 @@
 import React from "react";
-import LecturePage from "./pages/LecturePage"
+import LecturePage from "./pages/LecturePage";
 
 function App() {
   return (
