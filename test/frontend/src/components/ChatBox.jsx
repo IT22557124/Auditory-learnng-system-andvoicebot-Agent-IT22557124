@@ -2,7 +2,7 @@ import React, { useEffect, useRef, useState } from "react";
 import { Atom, Mic, Send, X, Maximize2, Volume2 } from "lucide-react";
 
 const ChatBox = () => {
-  const [question, setQuestion] = useState("")
+  const [question, setQuestion] = useState("");
   const [answer, setAnswer] = useState("");
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState("");
