@@ -31,7 +31,7 @@ const ChatBox = () => {
   const isMainListening = useRef(false);
 
   // Voice activity (no % text, no bar, blob animates ONLY when speaking)
-  const audioStreamRef = useRef(null);
+  const audioStreamRef = useRef(null)
   const audioCtxRef = useRef(null);
   const analyserRef = useRef(null);
   const rafRef = useRef(null);
