@@ -27,7 +27,7 @@ import ChatBox from "../components/ChatBox";
 
 const YT_STATES = {
   UNSTARTED: -1,
-  ENDED: 1,
+  ENDED: 0,
   PLAYING: 1,
   PAUSED: 2,
   BUFFERING: 3,
