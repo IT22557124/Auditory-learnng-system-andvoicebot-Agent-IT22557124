@@ -17,7 +17,7 @@ from sklearn.linear_model import LogisticRegression
 from sklearn.metrics.pairwise import cosine_similarity
 
 
-USE_LLM = True   # Set to False if  NO need
+USE_LLM = True   # Set to False if  NO need if
 
 if USE_LLM:
     from transformers import AutoTokenizer, AutoModelForCausalLM
