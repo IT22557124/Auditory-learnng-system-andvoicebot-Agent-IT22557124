@@ -23,7 +23,7 @@ import {
   Leaf,
   Bolt,
 } from "lucide-react";
-
+import ChatBox from "../components/ChatBox";
 
 const YT_STATES = {
   UNSTARTED: -1,
