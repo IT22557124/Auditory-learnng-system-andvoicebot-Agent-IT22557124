@@ -31,7 +31,7 @@ const YT_STATES = {
   PLAYING: 1,
   PAUSED: 2,
   BUFFERING: 3,
-  CUED: 4,
+  CUED: 5,
 };
 
 const LecturePage = () => {
