@@ -40,7 +40,7 @@ const ChatBox = () => {
   const WAKE_WORDS = ["hey", "hi", "hello", "ok buddy", "ok budy", "sci buddy", "scibuddy"];
 
   const sizeConfig = {
-    small: { width: 320, height: 600 },
+    small: { width: 320, height: 500 },
     medium: { width: 400, height: 640 },
     large: { width: 480, height: 740 },
   };
