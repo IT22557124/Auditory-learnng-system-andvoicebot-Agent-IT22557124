@@ -53,7 +53,7 @@ const LecturePage = () => {
   const isDark = theme === "dark";
   const isBlue = theme === "blue";
 
-  // ✅ Tailwind-safe gradients (no dynamic classes)
+  // ✅ final Tailwind-safe gradients (no dynamic classes)
   const statGradients = {
     blue: "from-blue-500 to-blue-600",
     indigo: "from-indigo-500 to-indigo-600",
