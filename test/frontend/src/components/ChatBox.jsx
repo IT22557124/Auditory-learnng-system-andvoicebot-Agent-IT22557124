@@ -16,7 +16,7 @@ const ChatBox = () => {
   const [voiceReady, setVoiceReady] = useState(false);
 
   const [position, setPosition] = useState(() => ({
-    x: window.innerWidth - 50,
+    x: window.innerWidth - 100,
     y: window.innerHeight - 100,
   }));
   const [isDragging, setIsDragging] = useState(false);
