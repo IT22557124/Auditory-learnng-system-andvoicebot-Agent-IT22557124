@@ -177,12 +177,12 @@ def build_or_load_index():
     print("✅ Index data saved.")
 
 
-# def vectorize_text(texts: List[str]) -> np.ndarray:
-#     """Convert a list of texts to TF-IDF vectors."""
-#     if tfidf_vectorizer is None:
-#         raise RuntimeError("TF-IDF vectorizer not initialized.")
-#     X = tfidf_vectorizer.transform(texts).astype("float32").toarray()
-#     return X
+def vectorize_text(texts: List[str]) -> np.ndarray:
+    """Convert a list of texts to TF-IDF vectors."""
+    if tfidf_vectorizer is None:
+        raise RuntimeError("TF-IDF vectorizer not initialized.")
+    X = tfidf_vectorizer.transform(texts).astype("float32").toarray()
+    return X
 
 # ====================================================
 # 2. SUPERVISED LEARNING: LOGISTIC REGRESSION
