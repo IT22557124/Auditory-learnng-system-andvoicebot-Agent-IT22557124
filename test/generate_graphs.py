@@ -64,7 +64,7 @@ def plot_chunk_length_distribution():
 # ----------------------------------------------------
 # 2. BUILD SUPERVISED DATASET (same logic as in app.py)
 # ----------------------------------------------------
-def map_answers_to_pdf_chunks(answers):
+def map_answers_to_pdf_chunks(answers)
     """
     For each CSV answer, find the most similar PDF chunk
     using TF-IDF + cosine similarity.
