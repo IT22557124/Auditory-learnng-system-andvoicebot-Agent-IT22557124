@@ -19,7 +19,7 @@ from sklearn.metrics.pairwise import cosine_similarity
 
 USE_LLM = True   # Set to False if  NO need 
 
-if USE_LLM:
+if USE_LLM
     from transformers import AutoTokenizer, AutoModelForCausalLM
     import torch
     MODEL_NAME = "TinyLlama/TinyLlama-1.1B-Chat-v1.0"
