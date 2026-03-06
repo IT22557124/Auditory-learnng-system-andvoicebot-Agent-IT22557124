@@ -27,7 +27,7 @@ QA_CSV_PATH = DATA_DIR / "gQAB.csv"
 # ----------------------------------------------------
 # Load core objects from your main system
 # ----------------------------------------------------
-with open(CHUNKS_PATH, "rb") as f:
+with open(CHUNKS_PATH, "rb") as f
     corpus_chunks = pickle.load(f)
 
 with open(TFIDF_VECTORIZER_PATH, "rb") as f:
