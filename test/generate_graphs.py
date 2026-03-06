@@ -56,7 +56,7 @@ def plot_chunk_length_distribution():
     plt.title("Data preprocessing: distribution of chunk lengths")
     out_path = REPORT_DIR / "chunk_length_distribution.png"
     plt.tight_layout()
-    plt.savefig(out_path, dpi=300)
+    plt.savefig(out_path, dpi=200)
     plt.close()
     print(f"✅ Saved chunk length distribution to {out_path}")
 
