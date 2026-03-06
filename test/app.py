@@ -196,7 +196,7 @@ def build_features_for_pairs(questions: List[str], chunks: List[str]) -> np.ndar
     q_vecs = vectorize_text(questions)
     c_vecs = vectorize_text(chunks)
     feats = np.abs(q_vecs - c_vecs)
-    return feats
+    return feats;
 
 
 def map_answers_to_pdf_chunks(answers: List[str]) -> List[str]:
